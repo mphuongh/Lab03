@@ -1,13 +1,15 @@
 {
-  "name": "jsx-lab-dashboard",
+  "name": "jsx-runtime-lab",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
     "type-check": "tsc --noEmit"
   },
-  "devDependencies": {
+  "dependencies": {
     "vite": "^6.0.0",
     "typescript": "^5.6.3"
   }
